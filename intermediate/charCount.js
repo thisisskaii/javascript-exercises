@@ -11,5 +11,8 @@
  */
 
 // Write your solution here
-
+function charCount(string,character){
+    var list=string.split('').filter(item=>item==character)
+    return list.length
+}
 module.exports = charCount;
