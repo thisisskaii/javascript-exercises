@@ -11,5 +11,12 @@
  */
 
 // Write your solution here
+function sumArray(list){
+    let sum=0
+    for(let number of list){
+        sum+=number
+    }
+    return sum
+}
 
 module.exports = sumArray;
