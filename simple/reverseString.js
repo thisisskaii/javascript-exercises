@@ -11,5 +11,7 @@
  */
 
 // Write your solution here
-
+let reverseString=(text)=>{
+    return text.split('').reverse().join('')
+}
 module.exports = reverseString;
