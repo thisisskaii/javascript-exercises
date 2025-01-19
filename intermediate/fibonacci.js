@@ -11,5 +11,11 @@
  */
 
 // Write your solution here
-
+let fibonacci=num=>{
+    let arr=[0,1]
+    for(let i =1;i<num-1;i++){
+        arr.push(arr[i]+arr[i-1])
+    }
+    return arr
+}
 module.exports = fibonacci;
