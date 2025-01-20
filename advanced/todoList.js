@@ -14,4 +14,16 @@
 
 // Write your solution here
 
+let listOfTasks=[]
+function addTask(task){
+    if(listOfTasks.indexOf(task)==-1) listOfTasks.push(task);
+}
+function removeTask(task){
+    let index=listOfTasks.indexOf(task);
+    listOfTasks.splice(index,1);
+}
+function showTasks(){
+    return listOfTasks;
+}
+
 module.exports = { addTask, removeTask, showTasks };
