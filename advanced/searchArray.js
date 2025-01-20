@@ -11,4 +11,11 @@
  * searchArray([1, 2, 3, 4], 5) should return false.
  */
 
+function searchArray(list,num){
+    for(let item of list) {
+        if(item==num) return true;
+    }
+    return false;
+}
+
 module.exports = searchArray;
