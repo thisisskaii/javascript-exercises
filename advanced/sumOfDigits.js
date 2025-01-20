@@ -9,5 +9,15 @@
  * sumOfDigits(123) should return 6 (1 + 2 + 3).
  * sumOfDigits(987) should return 24 (9 + 8 + 7).
  */
-
+let sumOfDigits=(num)=>{
+    let k; //kharej ghesmat
+    let m=num; //maghsoom
+    let sum=0;
+    while(m!=0){
+        k=Math.floor(m/10);
+        sum+=(m%10);
+        m=k;
+    }
+    return sum;
+}
 module.exports = sumOfDigits;
