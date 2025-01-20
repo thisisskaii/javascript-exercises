@@ -17,6 +17,14 @@
  * This exercise involves DOM manipulation. Ensure you have an HTML file with a container element
  * (e.g., `<div id="clock"></div>`) to display the clock.
  */
-
-
+let digitalClock=()=>{
+    setInterval(() => {
+        let span=document.getElementById('clock');
+        let time=new Date();
+        let hour=time.getHours();
+        let minute=time.getMinutes();
+        let second=time.getSeconds();
+        span.textContent=`${hour}:${minute}:${second}`
+    }, 1000);
+}
 module.exports = digitalClock;
