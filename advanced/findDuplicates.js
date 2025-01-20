@@ -12,4 +12,18 @@
 
 // Write your solution here
 
+function findDuplicates(list){
+    let duplicateList=[];
+    for(let i=0;i<list.length;i++){
+        for(let j=i+1;j<list.length;j++){
+            if(list[i]==list[j]) duplicateList.push(list[i])
+        }
+    }
+    //making the duplicateList unique:
+    let uniqueArray=new Set(duplicateList);
+    duplicateList.length=0;
+    for(let item of uniqueArray) duplicateList.push(item);
+    return duplicateList;
+}
+
 module.exports = findDuplicates;
