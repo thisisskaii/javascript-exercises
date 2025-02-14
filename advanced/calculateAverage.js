@@ -12,10 +12,7 @@
 
 function calculateAverage(list){
     if (list.length==0) return NaN;
-    var sum=list.reduce((previousval,currentval)=>{
-        return previousval+currentval;
-    });
-    return sum/list.length;
+    return list.reduce((previousval,currentval)=> previousval+currentval , 0) / list.length;
 }
 
 module.exports = calculateAverage;
